@@ -1,12 +1,12 @@
 Manifest-Version: 1.0
-Implementation-Title: spring-boot-hibernate-example
+Implementation-Title: supply-management-sytem
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: tdk
-Implementation-Vendor-Id: com.devglan
-Build-Jdk: 1.8.0_171
-Implementation-URL: http://projects.spring.io/spring-boot/spring-boot-
- hibernate-example/
+Built-By: Rakesh
+Implementation-Vendor-Id: com.iqsolutions
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/supply-manag
+ ement-sytem/
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
-Main-Class: spring-boot-example.Application
+Main-Class: sms.Application
 
