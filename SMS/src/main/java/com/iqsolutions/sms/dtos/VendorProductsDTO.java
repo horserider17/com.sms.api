@@ -1,57 +1,31 @@
 package com.iqsolutions.sms.dtos;
 
-import java.util.Date;
-
 public class VendorProductsDTO {
 
-	private int vendorProductId;
-
-	private int vendorTransactionId;
+//	private int vendorProductId;
+//
+//	private int vendorTransactionId;
 	
-	private double productQty;
+	private double quantity;
 	
-	private double productPrice;
+	private double price;
 	
-	private Date createdAt;
+//	private Date createdAt;
 
-	public int getVendorProductId() {
-		return vendorProductId;
+	public double getQuantity() {
+		return quantity;
 	}
 
-	public void setVendorProductId(int vendorProductId) {
-		this.vendorProductId = vendorProductId;
+	public void setQuantity(double quantity) {
+		this.quantity = quantity;
 	}
 
-	public int getVendorTransactionId() {
-		return vendorTransactionId;
+	public double getPrice() {
+		return price;
 	}
 
-	public void setVendorTransactionId(int vendorTransactionId) {
-		this.vendorTransactionId = vendorTransactionId;
+	public void setPrice(double price) {
+		this.price = price;
 	}
-
-	public double getProductQty() {
-		return productQty;
-	}
-
-	public void setProductQty(double productQty) {
-		this.productQty = productQty;
-	}
-
-	public double getProductPrice() {
-		return productPrice;
-	}
-
-	public void setProductPrice(double productPrice) {
-		this.productPrice = productPrice;
-	}
-
-	public Date getCreatedAt() {
-		return createdAt;
-	}
-
-	public void setCreatedAt(Date createdAt) {
-		this.createdAt = createdAt;
-	}
-
+	
 }

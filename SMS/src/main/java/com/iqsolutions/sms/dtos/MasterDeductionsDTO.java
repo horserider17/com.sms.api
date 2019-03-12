@@ -1,87 +1,54 @@
 package com.iqsolutions.sms.dtos;
 
-import java.util.Date;
-
 public class MasterDeductionsDTO {
 
-	private int deductionId;
-
-	private int deductionTypeId;
+	private String deductiontype;
 	
-	private MasterDeductionTypeDTO masterDeductionTypeEntity;
-
-	private double deductionValue;
-
-	private int providerId;
+	private double deductionvalue;
 	
-	private ProviderDTO providerEntity;
+	private int deductiontypeid;
 	
-	private boolean isActive;
+	private int deductionid;
 	
-	private Date createdAt;
+	private boolean isactive;
 
-	public int getDeductionId() {
-		return deductionId;
+	public String getDeductiontype() {
+		return deductiontype;
 	}
 
-	public void setDeductionId(int deductionId) {
-		this.deductionId = deductionId;
+	public void setDeductiontype(String deductiontype) {
+		this.deductiontype = deductiontype;
 	}
 
-	public int getDeductionTypeId() {
-		return deductionTypeId;
+	public double getDeductionvalue() {
+		return deductionvalue;
 	}
 
-	public void setDeductionTypeId(int deductionTypeId) {
-		this.deductionTypeId = deductionTypeId;
+	public void setDeductionvalue(double deductionvalue) {
+		this.deductionvalue = deductionvalue;
 	}
 
-	public MasterDeductionTypeDTO getMasterDeductionTypeEntity() {
-		return masterDeductionTypeEntity;
+	public int getDeductiontypeid() {
+		return deductiontypeid;
 	}
 
-	public void setMasterDeductionTypeEntity(MasterDeductionTypeDTO masterDeductionTypeEntity) {
-		this.masterDeductionTypeEntity = masterDeductionTypeEntity;
+	public void setDeductiontypeid(int deductiontypeid) {
+		this.deductiontypeid = deductiontypeid;
 	}
 
-	public double getDeductionValue() {
-		return deductionValue;
+	public boolean isIsactive() {
+		return isactive;
 	}
 
-	public void setDeductionValue(double deductionValue) {
-		this.deductionValue = deductionValue;
+	public void setIsactive(boolean isactive) {
+		this.isactive = isactive;
 	}
 
-	public int getProviderId() {
-		return providerId;
+	public int getDeductionid() {
+		return deductionid;
 	}
 
-	public void setProviderId(int providerId) {
-		this.providerId = providerId;
+	public void setDeductionid(int deductionid) {
+		this.deductionid = deductionid;
 	}
-
-	public ProviderDTO getProviderEntity() {
-		return providerEntity;
-	}
-
-	public void setProviderEntity(ProviderDTO providerEntity) {
-		this.providerEntity = providerEntity;
-	}
-
-	public boolean isActive() {
-		return isActive;
-	}
-
-	public void setActive(boolean isActive) {
-		this.isActive = isActive;
-	}
-
-	public Date getCreatedAt() {
-		return createdAt;
-	}
-
-	public void setCreatedAt(Date createdAt) {
-		this.createdAt = createdAt;
-	}
-	
 }

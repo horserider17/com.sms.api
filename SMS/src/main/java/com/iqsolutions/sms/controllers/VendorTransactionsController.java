@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
-import com.iqsolutions.sms.entities.VendorTransactionsEntity;
+import com.iqsolutions.sms.dtos.PostVendorBillDTO;
 import com.iqsolutions.sms.services.VendorTransactionService;
 import com.iqsolutions.sms.utils.Constants;
 import com.iqsolutions.sms.utils.WebResponseEntity;
@@ -29,6 +30,20 @@ public class VendorTransactionsController extends SmsBaseController {
 	@Autowired
 	private VendorTransactionService _vendorTransactionService;
 
+	/**
+	 * This is to send the data of master deductions and previous vendors bills
+	 * @return
+	 */
+	@SuppressWarnings("rawtypes")
+	@GetMapping(value="/byid")
+	public ResponseEntity<WebResponseEntity> getDataForAddBill(@RequestParam int providerId) {
+		try {
+			return BuildResponse(Constants.MESSAGES_SUCCESS, _vendorTransactionService.getDataForAddBill(providerId));
+		} catch (Exception e) {
+			return BuildErrorResponse(e);
+		}
+
+	}
 
 	/**
 	 * This method is for saving vendor transactions
@@ -38,30 +53,14 @@ public class VendorTransactionsController extends SmsBaseController {
 	@SuppressWarnings("rawtypes")
 	@PostMapping()
 	public ResponseEntity<WebResponseEntity> saveVendorTransaction(
-			@RequestBody VendorTransactionsEntity vendorTransactionsEntity){
+			@RequestBody PostVendorBillDTO postVendorBillDTO){
 		logger.info("Saving Vendor Transaction :");
 		try {
-			_vendorTransactionService.saveVendorTransaction(vendorTransactionsEntity);
+			_vendorTransactionService.saveVendorTransaction(postVendorBillDTO);
 			return BuildResponse(Constants.MESSAGES_CREATED);
-		}catch(Exception exception){
+		}catch(Exception e){
 			logger.info("Error in Saving Vendor Transaction :");
-			return BuildErrorResponse();
+			return BuildErrorResponse(e);
 		}
 	}
-
-	/**
-	 * This method is for getting all vendors transactions
-	 * @return
-	 */
-	@SuppressWarnings("rawtypes")
-	@GetMapping()
-	public ResponseEntity<WebResponseEntity> getVendorTransactions() {
-		try {
-			return BuildResponse(Constants.MESSAGES_SUCCESS, _vendorTransactionService.getVendorTransactions());
-		} catch (Exception e) {
-			return BuildErrorResponse();
-		}
-
-	}
-
 }

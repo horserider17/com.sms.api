@@ -40,6 +40,10 @@ public class VendorTransactionsEntity {
 	
 	private boolean isBillGenerated;
 	
+	private double totalAmount;
+	
+	private Date createdAt;
+
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@JoinColumn(name = "vendorTransactionId", referencedColumnName = "vendorTransactionId", insertable = false, updatable = false, nullable = false)
 	private List<VendorProductsEntity> vendorProductsEntities;
@@ -48,7 +52,6 @@ public class VendorTransactionsEntity {
 	@JoinColumn(name = "vendorTransactionId", referencedColumnName = "vendorTransactionId", insertable = false, updatable = false, nullable = false)
 	private List<VendorDeductionsEntity> vendorDeductionsEntities;
 	
-	private Date createdAt;
 
 	public int getVendorTransactionId() {
 		return vendorTransactionId;
@@ -136,6 +139,14 @@ public class VendorTransactionsEntity {
 
 	public void setCreatedAt(Date createdAt) {
 		this.createdAt = createdAt;
+	}
+
+	public double getTotalAmount() {
+		return totalAmount;
+	}
+
+	public void setTotalAmount(double totalAmount) {
+		this.totalAmount = totalAmount;
 	}
 	
 }
