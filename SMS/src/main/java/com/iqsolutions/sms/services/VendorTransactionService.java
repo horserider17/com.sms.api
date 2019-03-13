@@ -3,15 +3,13 @@
  */
 package com.iqsolutions.sms.services;
 
-import java.util.List;
-
-import com.iqsolutions.sms.entities.ProviderEntity;
-import com.iqsolutions.sms.entities.VendorTransactionsEntity;
+import com.iqsolutions.sms.dtos.GetVendorBillDTO;
+import com.iqsolutions.sms.dtos.PostVendorBillDTO;
 
 public interface VendorTransactionService {
 
-	List<ProviderEntity> getVendorTransactions();
+	GetVendorBillDTO getDataForAddBill(int providerId);
 
-	void saveVendorTransaction(VendorTransactionsEntity vendorTransactionsEntity);
+	void saveVendorTransaction(PostVendorBillDTO postVendorBillDTO);
 
 }

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" pageWidth="141" pageHeight="280" whenNoDataType="NoPages" columnWidth="101" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a563970a-4444-4b26-ba8f-8cdff0c8ce7e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<field name="Id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[providerId]]></fieldDescription>
+	</field>
+	<field name="Name" class="java.lang.Double">
+		<fieldDescription><![CDATA[advance]]></fieldDescription>
+	</field>
+	<field name="Price" class="java.lang.Integer">
+		<fieldDescription><![CDATA[vendorId]]></fieldDescription>
+	</field>
+	<pageHeader>
+		<band height="41">
+			<staticText>
+				<reportElement x="0" y="-2" width="121" height="43" uuid="afd5fddb-94e5-42e7-9f8b-766f712098b4">
+					<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+					<property name="com.jaspersoft.studio.unit." value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[BABA Lemon Company]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="41">
+			<staticText>
+				<reportElement x="0" y="0" width="121" height="40" uuid="db116b52-ffe5-4af6-ac2d-476b4e2153c1">
+					<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+					<property name="com.jaspersoft.studio.unit." value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Lemon and Fruits Exports
+Shop No 12, Nakrekal]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="371">
+			<frame>
+				<reportElement x="0" y="0" width="121" height="230" uuid="e4cce125-083f-4bf2-b860-0f772fbb8013"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<frame>
+					<reportElement x="0" y="0" width="121" height="60" uuid="d7dcb029-515e-4503-87d8-889112992c45"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<staticText>
+						<reportElement x="0" y="0" width="30" height="30" uuid="9fa0f756-599a-44cc-82ed-a62c2664d40b">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+						<textElement textAlignment="Left" verticalAlignment="Middle"/>
+						<text><![CDATA[Date]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="0" y="30" width="30" height="30" uuid="d5790054-ac18-4280-b795-c970f0675e4a">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+						<textElement textAlignment="Left" verticalAlignment="Middle"/>
+						<text><![CDATA[Kisan Name]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="60" y="0" width="30" height="30" uuid="efb5c4b0-d7ef-4fc5-a81c-3b470132bce3">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+						<textElement textAlignment="Left" verticalAlignment="Middle"/>
+						<text><![CDATA[Bill No]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="30" y="0" width="30" height="30" uuid="cd996b30-98fc-4d28-aa2e-e4fa72de4236">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+						<textElement textAlignment="Left" verticalAlignment="Middle"/>
+						<textFieldExpression><![CDATA["10-03-2019"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="30" y="30" width="30" height="30" uuid="78a8e003-a289-4210-a7ed-6120ce293536">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+						<textElement textAlignment="Left" verticalAlignment="Middle"/>
+						<textFieldExpression><![CDATA["Venkateshwarlu"]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="90" y="0" width="30" height="30" uuid="1bd9afef-fae1-4472-9d09-edf707e55bfd">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<box topPadding="3" leftPadding="3" bottomPadding="3" rightPadding="3"/>
+						<textElement textAlignment="Left" verticalAlignment="Middle"/>
+						<textFieldExpression><![CDATA["001"]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="0" y="60" width="121" height="30" uuid="fefea692-7f9b-43ad-b0b7-0af950e9162a"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<staticText>
+						<reportElement x="0" y="1" width="30" height="29" uuid="36614c31-6f26-49d0-8898-2173702eda1f"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[SNO]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="60" y="1" width="30" height="29" uuid="b0961621-5dbd-43db-b978-f77d88296d93"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[Rate]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="90" y="1" width="30" height="29" uuid="40b378f0-d63d-4757-b6bc-9b971d88ab6f"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[Amount]]></text>
+					</staticText>
+					<textField>
+						<reportElement x="30" y="1" width="30" height="29" uuid="1369ffb3-676c-4e39-889d-fb35b831578b"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<textFieldExpression><![CDATA["QTY"]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="0" y="90" width="121" height="95" uuid="a24bbf9c-bc24-442e-9f76-1cde2bdb1384"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<staticText>
+						<reportElement x="0" y="1" width="30" height="29" uuid="84a2a1db-cbb0-4cb6-9abe-6e75f5d410f6">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[1]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="30" y="1" width="30" height="29" uuid="41ee52c6-a967-43d7-9156-17a74a60de37">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[10]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="60" y="1" width="30" height="29" uuid="23e2d7bb-eea5-43f6-9eb3-a47af7dffa64">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[50]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="90" y="1" width="30" height="29" uuid="713fde4d-d3d6-4b91-ac5e-143f230744f8">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[500]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="0" y="31" width="30" height="29" uuid="e711c7d5-4884-4dd8-ba04-ef454f8a82b9">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[2]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="30" y="31" width="30" height="29" uuid="809250d6-2b79-4df1-995d-423e67e80b59">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[20]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="60" y="31" width="30" height="29" uuid="ee9d163c-f456-4a5d-b00b-222345a10436">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[40]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="90" y="31" width="30" height="29" uuid="66de6cf4-341c-41bd-98ff-be8fa4e38695">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[400]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="60" y="60" width="30" height="35" uuid="cd7f1f3b-de1b-47e0-afa3-eaba00bb69d3">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[Total]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="90" y="60" width="30" height="35" uuid="5bd6773f-3386-4b3e-adc9-c176dca82e5d">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[900]]></text>
+					</staticText>
+				</frame>
+				<frame>
+					<reportElement x="0" y="185" width="121" height="125" uuid="765a4437-aba0-44ad-ad93-52586958f776"/>
+					<box>
+						<pen lineWidth="0.5"/>
+					</box>
+					<staticText>
+						<reportElement x="30" y="1" width="30" height="29" uuid="3b51f2fb-aedd-452d-963c-ac4fc32d7958">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[Commision]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="90" y="1" width="30" height="29" uuid="be1f7f47-0bd8-4181-b088-b103ac6831c7">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[90]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="30" y="31" width="30" height="29" uuid="bd361705-bff2-4d99-83d4-77bbc9a47673">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[Labour]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="90" y="31" width="30" height="29" uuid="d062f908-feca-4548-9061-636b9a5cbcd4">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[60]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="30" y="60" width="30" height="30" uuid="6f699968-fcc9-4a74-9d49-0ff1d75a2912">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[Advance]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="90" y="60" width="30" height="30" uuid="d6a1ce5d-5c85-4349-9129-1c1682699e2e">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[100]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="60" y="90" width="30" height="35" uuid="3c570a4b-5076-4aaf-93e6-64aa2b1c8ba0">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[Total Expenses]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="90" y="90" width="30" height="35" uuid="b1462b1b-d317-4257-bf34-8dbb3f69dbdb">
+							<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+							<property name="com.jaspersoft.studio.unit." value="pixel"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle"/>
+						<text><![CDATA[250]]></text>
+					</staticText>
+					<frame>
+						<reportElement x="0" y="125" width="121" height="45" uuid="c5e80963-9e91-4765-8a5a-854b10a65385"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<staticText>
+							<reportElement x="60" y="0" width="30" height="35" uuid="1e105a66-2877-47ff-9b6c-e4c0d4c2e380">
+								<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+								<property name="com.jaspersoft.studio.unit." value="pixel"/>
+							</reportElement>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<text><![CDATA[Net]]></text>
+						</staticText>
+						<staticText>
+							<reportElement x="90" y="0" width="30" height="35" uuid="72c97414-972c-4793-afe2-a6fc19723832">
+								<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+								<property name="com.jaspersoft.studio.unit." value="pixel"/>
+							</reportElement>
+							<textElement textAlignment="Center" verticalAlignment="Middle"/>
+							<text><![CDATA[750]]></text>
+						</staticText>
+					</frame>
+				</frame>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
