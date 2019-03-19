@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="209" pageHeight="481" columnWidth="208" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="2f6fcf64-fab4-489a-8347-7629b6f1c7c0">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="mm"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="mm"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="deductionType" class="java.lang.String"/>
+	<field name="deductionValue" class="java.lang.Double"/>
+	<field name="deductionAmount" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="20">
+			<frame>
+				<reportElement x="0" y="0" width="210" height="20" uuid="d0949711-f8fa-4320-ba46-091cf0a2a347"/>
+				<box>
+					<pen lineWidth="0.0"/>
+				</box>
+				<textField>
+					<reportElement x="10" y="0" width="80" height="20" uuid="622632f9-3964-4b5a-beb1-4ce1fd42b8b1"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{deductionType}!=null?$F{deductionType}:"-"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="100" y="0" width="50" height="20" uuid="364520d1-9df2-46e8-b0bf-60e412ef7ebc"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{deductionValue}!=null?$F{deductionValue}:"-"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="150" y="0" width="60" height="20" uuid="4c5a36e3-d02b-4798-b152-da28c2e28d49"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="2" rightPadding="2"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Times New Roman" size="10"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{deductionAmount}!=null?$F{deductionAmount}:0]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
