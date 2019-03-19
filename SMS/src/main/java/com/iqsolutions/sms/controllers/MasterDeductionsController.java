@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,6 +20,7 @@ import com.iqsolutions.sms.utils.WebResponseEntity;
  *
  */
 @Controller
+@CrossOrigin(origins="*")
 @RequestMapping(value="api/master-deductions")
 public class MasterDeductionsController extends SmsBaseController {
 
